@@ -300,10 +300,17 @@ nav a:hover {
 
 .footer .copyright_div ul {
   padding-right: 0;
+  padding: 0;
 }
 
 .footer .copyright_div ul li {
   display: inline;
+  margin-left: 15px;
+  padding: 1px 10px;
+}
+
+.footer .copyright_div ul li:not(:first-child){
+  border-left: 1px solid #676a6c;
 }
 
 .footer .copyright_div span {
