@@ -202,6 +202,23 @@ nav a:hover {
   width: inherit;
 }
 
+.second_div .content_div h5{
+  position: relative;
+  /* width: 10px; */
+}
+
+.second_div .content_div h5::after{
+  content: "";
+  background-image: url(./../assets/svg/right-arrow-svgrepo-com.svg);
+  background-size: 100% 100%;
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  padding-right: 20px;
+  position: relative;
+  top: 2px;
+}
+
 .fourth_div {
   background-image: url(./../assets/png/pcr-plastic-desktop.png);
   background-repeat: no-repeat;
