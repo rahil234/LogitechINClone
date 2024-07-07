@@ -176,10 +176,10 @@ nav a:hover {
 
 .second_div{
   background-color: #ffffff;
-  overflow-X: scroll;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+  padding-bottom: 80px;
 }
 .second_div .content_div{
   margin-top: 80px;
@@ -187,6 +187,7 @@ nav a:hover {
 
 .second_div .content_div p{
   font-family: "Lineto light";
+  font-size: 16px;
 }
 
 .second_div .content_div img{
@@ -196,7 +197,7 @@ nav a:hover {
 }
 
 .second_div .content_div h5{
-  position: relative;
+  font-size: 14px;
 }
 
 .second_div .content_div h5::after{
