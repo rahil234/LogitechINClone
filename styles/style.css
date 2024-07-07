@@ -25,6 +25,7 @@ body {
 
 body > * {
   padding: 0 5vw;
+  box-sizing: border-box;
 }
 
 .header {
@@ -63,32 +64,19 @@ body > * {
   color: #676a6c;
   width: 130px;
 }
-/* .header button::after {
-  content: url("./../assets/svg/down_arrow.svg");
-  display: flex;
-  position: absolute;
-  right: 0;
-  top: 0;
-} */
 
 .header button::after {
   content: "";
   background-image: url(./../assets/svg/down_arrow.svg);
   background-size: 100% 100%;
   display: inline-block;
-
-  /*size of your image*/
   height: 25px;
   width: 25px;
-
-  /*if you want to change the position you can use margins or:*/
   position: relative;
   top: 5px;
 }
 
 .first_div {
-  height: 85vh;
-  padding: 0 150px;
   color: #ffffff;
   background-image: url(./../assets/jpg/combo-touch-ipad-air-12.9-inch-hpb-desktop1.jpg);
   background-repeat: no-repeat;
@@ -161,18 +149,24 @@ nav a:hover {
   width: 330px;
 }
 
+.first_div .inner_content_div > * {
+  margin: 10px 0;
+}
+
 .first_div .inner_content_div p {
   font-family: "Lineto light";
   font-size: 25px;
 }
 
 .first_div .inner_content_div button {
-  font-size: 15px;
+  font-family: brown, Helvetica, sans-serif;
+  font-size: 14px;
   font-weight: bold;
   color: #ffffff;
-  padding: 20px;
+  padding: 18px 36px;
   background-color: #2f3132;
-  border: 1px solid #2f3132;
+  border: 2px solid #2f3132;
+  margin-bottom: 50px;
 }
 
 .first_div .inner_content_div button:hover {
@@ -182,16 +176,13 @@ nav a:hover {
 
 .second_div{
   background-color: #ffffff;
-  height: 93vh;
-}
-.second_div .inner_div{
-  display: flex;
+  overflow-X: scroll;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-  justify-content: center;
 }
 .second_div .content_div{
   margin-top: 80px;
-  width: 380px;
 }
 
 .second_div .content_div p{
@@ -199,12 +190,13 @@ nav a:hover {
 }
 
 .second_div .content_div img{
-  width: inherit;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .second_div .content_div h5{
   position: relative;
-  /* width: 10px; */
 }
 
 .second_div .content_div h5::after{
@@ -274,8 +266,9 @@ nav a:hover {
 }
 
 .footer .social_div .mail_div input[type="text"] {
-  padding: 10px;
+  padding: 10px 20px;
   width: 340px;
+  height: 25px;
   background-color: #ffffff;
   border: 0;
 }
@@ -337,12 +330,11 @@ nav a:hover {
 .input_text_div {
   display: flex;
   background-color: #dcfd00;
-  align-items: center;
 }
 
 .input_text_div img {
-  padding-left: 20px;
-  height: 15px;
+  padding: 0 20px;
+  height: auto;
 }
 
 .india_div span{
